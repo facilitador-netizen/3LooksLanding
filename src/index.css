@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Cormorant Garamond", "Bodoni Moda", Georgia, serif;
+    --font-display: "Bodoni Moda", "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    --color-brand-beige: #f8f6f0;
+    --color-brand-sand: #e6dfd3;
+    --color-brand-graphite: #3d1a0e;
+    --color-brand-olive: #2e3e2b;
+    --color-brand-terracotta: #a26822;
+    --color-brand-corten: #a26822;
+    --color-brand-corten-dark: #855013;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #fcfbfa;
+    color: #3d1a0e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: #e6dfd3;
+    color: #3d1a0e;
+  }
+}
+
+.font-serif-editorial {
+  font-family: var(--font-serif);
+  font-feature-settings: "liga" 1, "dlig" 1, "kern" 1;
+}
+
+.font-display-editorial {
+  font-family: var(--font-display);
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+.font-sans-editorial {
+  font-family: var(--font-sans);
+  letter-spacing: -0.012em;
+}
+
+.font-mono-editorial {
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+}
+
+/* Custom cursor for fine-pointer desktop browsers */
+@media (pointer: fine) {
+  body.has-custom-cursor,
+  body.has-custom-cursor a,
+  body.has-custom-cursor button,
+  body.has-custom-cursor [role="button"],
+  body.has-custom-cursor [data-cursor="portfolio"],
+  body.has-custom-cursor [data-cursor="clickable"] {
+    cursor: none;
+  }
+
+  body.has-custom-cursor input[type="text"],
+  body.has-custom-cursor input[type="email"],
+  body.has-custom-cursor textarea {
+    cursor: text;
+  }
+}
+

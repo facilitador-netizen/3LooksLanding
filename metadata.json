@@ -1,0 +1,6 @@
+{
+  "name": "Três Olhares — Estúdio de Curadoria, Produção e Styling",
+  "description": "Landing page editorial e sofisticada do Estúdio Três Olhares: curadoria autoral, gestão de fornecedores e produção final para arquitetura e interiores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
